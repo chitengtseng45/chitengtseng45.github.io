@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡與意見回饋 | 兒科肌肉骨骼超音波教學網</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-name">兒科肌肉骨骼超音波教學</span>
+      <span class="brand-sub">PEDIATRIC MSK ULTRASOUND · CGMH KEELUNG</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">首頁</a>
+      <a href="articles/joint-ultrasound.html">關節</a>
+      <a href="articles/salivary-gland.html">唾液腺</a>
+      <a href="articles/neck-lymph-node.html">頸部淋巴結</a>
+      <a href="workshop.html">工作坊</a>
+      <a href="blog.html">部落格</a>
+      <a href="about.html">關於講者</a>
+      <a href="contact.html" class="active">聯絡</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow">CONTACT &amp; FEEDBACK</div>
+    <h1>聯絡與意見回饋</h1>
+    <p class="lead">歡迎工作坊學員、合作邀請、學員回饋、進修交流，透過下方表單或直接 email 與主筆者聯絡。</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <article class="teaching-article">
+
+    <h2>直接 Email</h2>
+    <p>最快的聯絡方式是直接寫信至下方信箱：</p>
+    <p style="text-align:center; margin: 1.5rem 0;">
+      <a class="btn btn-gold" href="mailto:your-email@example.com?subject=來自超音波教學網的聯絡">your-email@example.com</a>
+    </p>
+    <p style="text-align:center; font-size: 0.9rem; color: var(--text-soft);">（請將上方 email 替換為您實際的聯絡信箱）</p>
+
+    <h2>使用表單聯絡</h2>
+    <p>若您偏好填寫表單，可使用下方留言。送出後將直接開啟您電腦的 email 應用程式並帶入您填寫的內容（無需後端伺服器）。</p>
+
+    <form class="contact-form" id="contact-form" onsubmit="return sendEmail(event)">
+
+      <label for="name">您的姓名 <span style="color: var(--danger);">*</span></label>
+      <input type="text" id="name" name="name" required placeholder="例：王小明 醫師">
+
+      <label for="email">您的 Email <span style="color: var(--danger);">*</span></label>
+      <input type="email" id="email" name="email" required placeholder="example@hospital.org">
+
+      <label for="affiliation">服務單位（選填）</label>
+      <input type="text" id="affiliation" name="affiliation" placeholder="例：某某醫院 小兒科">
+
+      <label for="topic">主題 <span style="color: var(--danger);">*</span></label>
+      <input type="text" id="topic" name="topic" required placeholder="例：工作坊邀請、學員回饋、案例討論">
+
+      <label for="message">訊息內容 <span style="color: var(--danger);">*</span></label>
+      <textarea id="message" name="message" required placeholder="請填寫您的詢問內容..."></textarea>
+
+      <button type="submit" class="btn">送出訊息</button>
+    </form>
+
+    <h2>其他聯絡資訊</h2>
+    <ul>
+      <li><strong>服務單位：</strong>基隆長庚紀念醫院 兒童過敏氣喘風濕科 (AIR)</li>
+      <li><strong>醫院總機：</strong>(02) 2431-3131</li>
+      <li><strong>學會參考：</strong>中華民國兒童過敏氣喘免疫及風濕病醫學會 (TPRA)</li>
+      <li><strong>Blogger：</strong><a href="blog.html">主筆者衛教文章</a></li>
+    </ul>
+
+    <div class="callout pearl">
+      <span class="callout-title">學員回饋特別說明</span>
+      若您是參加過本工作坊的學員，歡迎在主題欄位註明「工作坊回饋」，幫助主筆者調整下次課程的方向。每一份回饋都會被仔細閱讀。
+    </div>
+
+    <div class="callout warning">
+      <span class="callout-title">注意事項</span>
+      本網站僅供醫學教育用途，<strong>無法處理個別醫療諮詢</strong>。若您有具體的醫療問題，請至附近的小兒科或兒童風濕科門診就診。
+    </div>
+
+  </article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>網站</h4>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="about.html">關於講者</a></li>
+        <li><a href="workshop.html">工作坊</a></li>
+        <li><a href="contact.html">聯絡</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>教學模組</h4>
+      <ul>
+        <li><a href="articles/joint-ultrasound.html">關節超音波</a></li>
+        <li><a href="articles/salivary-gland.html">唾液腺超音波</a></li>
+        <li><a href="articles/neck-lymph-node.html">頸部淋巴結</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>主辦單位</h4>
+      <p>
+        林口／基隆長庚紀念醫院<br>
+        兒童過敏氣喘風濕科 (AIR)
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Chi-Teng Tseng, MD-MPH · Pediatric MSK Ultrasound Education<br>
+    本站內容僅供醫學教育用途，不構成個別醫療建議。
+  </div>
+</footer>
+
+<script>
+  // Simple client-side form: opens user's email client (mailto:) with pre-filled content.
+  // No backend server required.
+  // ===> 請把下方 RECIPIENT 改成您的實際 email <===
+  const RECIPIENT = "your-email@example.com";
+
+  function sendEmail(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const affiliation = document.getElementById('affiliation').value;
+    const topic = document.getElementById('topic').value;
+    const message = document.getElementById('message').value;
+
+    const subject = `[超音波教學網] ${topic} — from ${name}`;
+    const body =
+      `姓名：${name}\n` +
+      `Email：${email}\n` +
+      `服務單位：${affiliation || '（未填寫）'}\n\n` +
+      `訊息內容：\n${message}\n\n` +
+      `--- via Pediatric MSK Ultrasound Education site ---`;
+
+    const mailto = `mailto:${RECIPIENT}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+    return false;
+  }
+</script>
+
+</body>
+</html>
