@@ -269,6 +269,15 @@ figure.fig figcaption {
   line-height: 1.6;
 }
 figure.fig figcaption .fig-label { font-style: normal; font-weight: 700; color: var(--navy-900); }
+figure.fig .fig-source {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  font-style: normal;
+  text-align: center;
+  line-height: 1.5;
+}
+figure.fig .fig-source a { color: var(--navy-700); }
 
 /* Tables (scoring systems) */
 table.scoring {
